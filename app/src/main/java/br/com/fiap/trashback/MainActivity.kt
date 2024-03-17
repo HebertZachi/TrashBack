@@ -19,6 +19,7 @@ import br.com.fiap.trashback.Pages.Cadastro
 import br.com.fiap.trashback.Pages.Home
 import br.com.fiap.trashback.Pages.Login
 import br.com.fiap.trashback.ui.theme.TrashBackTheme
+import com.google.android.gms.maps.SupportMapFragment
 
 class MainActivity() : ComponentActivity(), Parcelable {
     constructor(parcel: Parcel) : this() {
@@ -44,6 +45,9 @@ class MainActivity() : ComponentActivity(), Parcelable {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_maps)
+//        val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+//        mapFragment.getMapAsync(this)
         setContent {
             TrashBackTheme {
                 Surface(
@@ -64,3 +68,4 @@ class MainActivity() : ComponentActivity(), Parcelable {
         }
     }
 }
+
